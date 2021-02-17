@@ -15,7 +15,6 @@ public class EncryptionClass {
         Collections.reverse(Arrays.asList(TabValue));
         Arrays.stream(TabValue).toArray();
         String joinedReversedConvertedTab = String.join("",TabValue);
-        System.out.println(joinedReversedConvertedTab);
         return joinedReversedConvertedTab;
     }
 
@@ -89,6 +88,11 @@ public class EncryptionClass {
         }
 
         return String.valueOf(convertedValue);
+
+    }
+
+    public String Decrypt(String value){
+        return MixinChars(Decryption(SplitEncryptedStr(value)));
 
     }
 
